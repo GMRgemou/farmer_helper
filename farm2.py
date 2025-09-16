@@ -257,14 +257,12 @@ class AgriculturalAdvisor:
         
         return "\n".join(report)
 
-# 示例使用
+# 示例
 if __name__ == "__main__":
-    # 需要先注册和风天气获取API密钥
-    API_KEY = "9da94c2856494f61b9c13ab6ed7fef9c"  # 替换为您的实际API密钥
+    API_KEY = ""
     
     advisor = AgriculturalAdvisor(qweather_api_key=API_KEY)
     
-    # 示例作物数据
     sample_crop_data = {
         "crop_type": "水稻",
         "growth_stage": "抽穗期",
@@ -272,10 +270,10 @@ if __name__ == "__main__":
         "soil_moisture": 65
     }
     
-    # 生成报告（使用北京作为示例地点）
     try:
         report = advisor.generate_report(sample_crop_data, "北京")
         print(report)
     except Exception as e:
         print(f"生成报告时发生错误: {e}")
+
         print("请检查API密钥和网络连接")
