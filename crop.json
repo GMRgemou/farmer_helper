@@ -1,0 +1,7 @@
+{
+    "crop_type": "水稻",
+    "growth_stage": "抽穗期",
+    "symptoms": ["叶片出现梭形病斑", "穗部变褐"],
+    "soil_moisture": 65,
+    "location": "北京"
+}
