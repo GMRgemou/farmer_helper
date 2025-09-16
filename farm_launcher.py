@@ -85,7 +85,7 @@ def main():
     print("=" * 40)
     
     # 配置API密钥
-    API_KEY = "9da94c2856494f61b9c13ab6ed7fef9c"  # 替换为您的实际API密钥
+    API_KEY = ""
     
     # 初始化顾问
     advisor = AgriculturalAdvisor(qweather_api_key=API_KEY)
@@ -176,4 +176,5 @@ def main():
         print("请检查API密钥和网络连接")
 
 if __name__ == "__main__":
+
     main()
